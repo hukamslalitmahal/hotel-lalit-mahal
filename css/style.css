@@ -799,7 +799,7 @@ color: #aa8453;
     position: relative;
 }
 #cappa-aside {
-    padding: 60px  10px  60px 10px;
+    padding: 60px  10px  60px 25px;
     width: 20.9%;
     position: fixed;
     bottom: 0;
@@ -826,7 +826,7 @@ color: #aa8453;
         -ms-transform: translateX(-375px);
         -o-transform: translateX(-375px);
         transform: translateX(-375px);
-        padding: 60px 7.5px 0 7.5px;
+        padding: 60px 15px 0 15px;
     }
     
 #cappa-aside .cappa-logo h2 {
