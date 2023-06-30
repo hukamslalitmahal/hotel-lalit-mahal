@@ -110,7 +110,7 @@ Flaticon icon font: Flaticon
 	content: '\f125';
 }
 .flaticon-swimming:before {
-	content: '\f126';
+	content: url("https://img.icons8.com/ios/aa8453/50/disco-ball.png");
 }
 .flaticon-paper-plane:before {
 	content: '\f127';
