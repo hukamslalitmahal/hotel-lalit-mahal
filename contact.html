@@ -203,7 +203,7 @@
                 <div class="row">
                   <div class="col-12">
                     <div
-                    id = 'form-alert'
+                      id="form-alert"
                       class="alert alert-success contact__msg"
                       style="display: none"
                       role="alert"
@@ -374,9 +374,12 @@
                       }
 
                       function validateForm() {
-                        
-                        document.getElementById("form-button").removeAttribute("type")
-                        document.getElementById("form-button").setAttribute("disabled" ,"disabled")
+                        document
+                          .getElementById("form-button")
+                          .removeAttribute("type");
+                        document
+                          .getElementById("form-button")
+                          .setAttribute("disabled", "disabled");
                         var scriptURL =
                           "https://script.google.com/macros/s/AKfycby6OhbauwLQH1D0Dw9AGDb2LiIvMfj26xgPbzUL9m_9n9mP802dvaAQj51GwIIy2SP1/exec";
                         var form = document.forms["Contact-Form"];
@@ -385,21 +388,26 @@
                           body: new FormData(form),
                         })
                           .then((response) => {
-                            document.getElementById("form-elements").innerHTML="";
-                            document.getElementById("form-alert").style.display='block';
+                            document.getElementById("form-elements").innerHTML =
+                              "";
+                            document.getElementById(
+                              "form-alert"
+                            ).style.display = "block";
                           })
-                          .catch((error) =>
-                          document.getElementById("form-button").removeAttribute("disabled"),
-                          document.getElementById("form-button").setAttribute("type" ,"submit")
-
+                          .catch(
+                            (error) =>
+                              document
+                                .getElementById("form-button")
+                                .removeAttribute("disabled"),
+                            document
+                              .getElementById("form-button")
+                              .setAttribute("type", "submit")
                           );
-
-                        
                       }
                     </script>
                     <style>
-                      #form-button:disabled{
-background-color: black;
+                      #form-button:disabled {
+                        background-color: black;
                       }
                     </style>
                   </div>
