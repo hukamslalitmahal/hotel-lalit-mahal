@@ -259,7 +259,7 @@
                     ></textarea>
                   </div>
                   <div class="col-md-12">
-                    <button type="submit" class="butn-dark2">
+                    <button type="submit" class="butn-dark2" id="form-button">
                       <span>Send Message</span>
                     </button>
                   </div>
@@ -374,6 +374,9 @@
                       }
 
                       function validateForm() {
+                        
+                        document.getElementById("form-button").removeAttribute("type")
+                        document.getElementById("form-button").setAttribute("disabled" ,"disabled")
                         var scriptURL =
                           "https://script.google.com/macros/s/AKfycby6OhbauwLQH1D0Dw9AGDb2LiIvMfj26xgPbzUL9m_9n9mP802dvaAQj51GwIIy2SP1/exec";
                         var form = document.forms["Contact-Form"];
@@ -386,12 +389,19 @@
                             document.getElementById("form-alert").style.display='block';
                           })
                           .catch((error) =>
-                            console.error("Error!", error.message)
+                          document.getElementById("form-button").removeAttribute("disabled"),
+                          document.getElementById("form-button").setAttribute("type" ,"submit")
+
                           );
 
                         
                       }
                     </script>
+                    <style>
+                      #form-button:disabled{
+background-color: black;
+                      }
+                    </style>
                   </div>
                 </div>
               </div>
