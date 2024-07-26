@@ -254,6 +254,9 @@
 .ti-check:before {
 	content: "\e64c";
 }
+.ti-check-disc:before {
+	content: "●";
+}
 .ti-check-box:before {
 	content: "\e64d";
 }
